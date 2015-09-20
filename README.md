@@ -25,10 +25,12 @@ Testowano na kartach graficznych: NVIDIA GeForce 710M, Intel HD Graphics 4000.
 2) **[SDL2](https://www.libsdl.org)**</br>
 3) **[GLEW](http://www.glew.sourceforge.net)**</br>
 4) **[GLM](http://www.glm.g-truc.net)**</br>
+5) **[SOIL](http://www.lonesock.net/soil.html)**</br>
+6) **[Assimp](http://assimp.sourceforge.net)**</br>
 
 #### Pakiety dla Ubuntu:
 
-sudo apt-get install libsdl2-dev glew-utils libglew-dev libglm-dev libdevil-dev libassimp-dev
+sudo apt-get install libsdl2-dev glew-utils libglew-dev libglm-dev libsoil-dev libassimp-dev
 </br>
 </br>
 
