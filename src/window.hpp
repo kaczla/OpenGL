@@ -1,3 +1,9 @@
+#ifndef _window_hpp_
+#define _window_hpp_
+
+#include <SDL2/SDL.h>
+#include "logger.hpp"
+using namespace std;
 
 extern Logger logger;
 
@@ -5,9 +11,11 @@ class Window{
    public:
       Window();
       ~Window();
+      Window( const Window &window );
+      Window & operator =( const Window &window );
       bool Create();
       void Update();
-      void SetResolution( int width, int height )
+      void SetResolution( int width, int height );
       static void SetMaxMinResolution( SDL_Window * window, int &min_width, int &min_height, int &max_width, int &max_height  );
    private:
       SDL_Window * Id = nullptr;
@@ -26,3 +34,5 @@ class Window{
       string Title = "OpenGL";
       bool Init = false;
 };
+
+#endif

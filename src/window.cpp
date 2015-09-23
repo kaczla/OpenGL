@@ -8,6 +8,13 @@ Window::~Window(){
    SDL_DestroyWindow( this->Id );
 }
 
+Window::Window( const Window &window ){
+}
+
+Window & Window::operator =( const Window &window ){
+   return *this;
+}
+
 bool Window::Create(){
    logger << ( "[LOG] CREATING WINDOW:" );
    if( SDL_WasInit( SDL_INIT_VIDEO ) == 0 ){
