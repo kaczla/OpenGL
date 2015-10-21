@@ -111,6 +111,54 @@ void Window::SetResolution( int width, int height ){
    this->HeightHalf = this->Height / 2;
 }
 
+int Window::ReturnWidth() const{
+   return this->Width;
+}
+
+int Window::ReturnHeight() const{
+   return this->Height;
+}
+
+int Window::ReturnWidthHalf() const{
+   return this->WidthHalf;
+}
+
+int Window::ReturnHeightHalf() const{
+   return this->HeightHalf;
+}
+
+int Window::ReturnWidthMin() const{
+   return this->WidthMin;
+}
+
+int Window::ReturnHeightMin() const{
+   return this->HeightMin;
+}
+
+int Window::ReturnWidthMax() const{
+   return this->WidthMax;
+}
+
+int Window::ReturnHeightMax() const{
+   return this->HeightMax;
+}
+
+int Window::ReturnPositionX() const{
+   return this->PositionX;
+}
+
+int Window::ReturnPositionY() const{
+   return this->PositionY;
+}
+
+string Window::ReturnTitle() const{
+   return this->Title;
+}
+
+bool Window::ReturnInit() const{
+   return this->Init;
+}
+
 void Window::SetMaxMinResolution( SDL_Window * window, int &min_width, int &min_height, int &max_width, int &max_height  ){
    if( window == NULL or window == nullptr ){
       return;

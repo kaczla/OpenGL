@@ -16,6 +16,18 @@ class Window{
       bool Create();
       void Update();
       void SetResolution( int width, int height );
+      int ReturnWidth() const;
+      int ReturnHeight() const;
+      int ReturnWidthHalf() const;
+      int ReturnHeightHalf() const;
+      int ReturnWidthMin() const;
+      int ReturnHeightMin() const;
+      int ReturnWidthMax() const;
+      int ReturnHeightMax() const;
+      int ReturnPositionX() const;
+      int ReturnPositionY() const;
+      string ReturnTitle() const;
+      bool ReturnInit() const;
       static void SetMaxMinResolution( SDL_Window * window, int &min_width, int &min_height, int &max_width, int &max_height  );
    private:
       SDL_Window * Id = nullptr;
