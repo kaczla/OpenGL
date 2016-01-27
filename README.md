@@ -1,10 +1,15 @@
 # OpenGL
 [C++] OpenGL 3.3+ with SDL 2.0
 
+</br>
+Project Frozen!
+</br>
+
 ### Opis:
 
 </br>
 </br>
+
 
 ### Testowane na:
 
